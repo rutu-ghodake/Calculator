@@ -1,1 +1,44 @@
-# Calculator 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form name="forms">
+        <input type="text" id="display" name="display" disabled />
+        <div class="buttons">
+          <input type="button" id="btn" value="7" />
+          <input type="button" id="btn" value="8" />
+          <input type="button" id="btn" value="9" />
+          <input type="button" id="btn" value="/" /><br />
+          <input type="button" id="btn" value="4" />
+          <input type="button" id="btn" value="5" />
+          <input type="button" id="btn" value="6" />
+          <input type="button" id="btn" value="*" /><br />
+          <input type="button" id="btn" value="1" />
+          <input type="button" id="btn" value="2" />
+          <input type="button" id="btn" value="3" />
+          <input type="button" id="btn" value="-" /><br />
+          <input type="button" id="btn" value="." />
+          <input type="button" id="btn" value="0" />
+          <input type="button" id="btn" value="+" />
+          <input
+            type="button"
+            id="clear"
+            value="C"
+            onclick="document.forms.display.value=''"
+          /><br />
+          <input
+            type="button"
+            id="equal"
+            value="="
+            onclick="document.forms.display.value=eval(document.forms.display.value)"
+          />
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="Calculator.js"></script>
+  </body>
+</html> 
